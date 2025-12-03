@@ -284,7 +284,7 @@ class ScreenB extends StatelessWidget {
                   end: Alignment.bottomRight,
                   colors: [
                     Colors.blue.shade50,
-                    //Colors.lightBlue.shade50,
+                    Colors.lightBlue.shade50,
                   ],
                 ),
               ),
