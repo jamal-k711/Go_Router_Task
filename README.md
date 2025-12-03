@@ -72,22 +72,26 @@ flutter run
 lib/
 ├─ main.dart
 ├─ router/
-│  └─ app_router.dart
+│ └─ app_router.dart
 ├─ providers/
-│  └─ phrase_provider.dart
+│ └─ phrase_provider.dart
 ├─ ui/
-│  ├─ screens/
-│  │  ├─ screen_a.dart
-│  │  ├─ screen_b.dart
-│  │  └─ screen_c.dart
-│  └─ widgets/
-│     ├─ highlighted_text.dart
-│     ├─ gradient_background.dart
-│     ├─ rounded_card.dart
-│     ├─ primary_button.dart
-│     └─ ...other widgets
+│ ├─ screens/
+│ │ ├─ screen_a.dart
+│ │ ├─ screen_b.dart
+│ │ └─ screen_c.dart
+│ └─ widgets/
+│ ├─ highlighted_text.dart
+│ ├─ gradient_background.dart
+│ ├─ rounded_card.dart
+│ ├─ primary_button.dart
+│ └─ ...other widgets
 ├─ utils/
-│  └─ hashtag_extractor.dart
+│ └─ hashtag_extractor.dart
+└─ assets/
+└─ screenshots/
+├─ ss_1.png
+└─ ss_2.png
 
 ## Architecture & Patterns
 
