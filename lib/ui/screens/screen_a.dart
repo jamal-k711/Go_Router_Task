@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import '../widgets/gradient_background.dart';
+import '../widgets/primary_button.dart';
 
 class ScreenA extends StatelessWidget {
   const ScreenA({super.key});
@@ -7,17 +9,13 @@ class ScreenA extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              Colors.deepPurple,
-              Colors.indigoAccent,
-            ],
-          ),
-        ),
+      body: GradientBackground(
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        colors: [
+          Colors.deepPurple,
+          Colors.indigoAccent,
+        ],
         child: SafeArea(
           child: Center(
             child: Column(
@@ -33,7 +31,7 @@ class ScreenA extends StatelessWidget {
                       width: 2,
                     ),
                   ),
-                  child: Icon(
+                  child: const Icon(
                     Icons.rocket_launch_rounded,
                     size: 100,
                     color: Colors.white,
@@ -59,22 +57,12 @@ class ScreenA extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 60),
-                ElevatedButton(
+                PrimaryButton(
                   onPressed: () => context.go('/screen_b'),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.deepPurple,
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 48,
-                      vertical: 20,
-                    ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    elevation: 8,
-                  ),
+                  backgroundColor: Colors.white,
+                  foregroundColor: Colors.deepPurple,
                   child: const Row(
-                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         'Get Started',
